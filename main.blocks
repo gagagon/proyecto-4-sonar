@@ -1,0 +1,8 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><comment id="%jS!.iuH1jtYel:~y2I8" x="193" y="-60" h="90" w="273">gonzalo martinez centeno s2c</comment><comment id="X,BT63@uhQm}~S(f%anF" x="366" y="49" h="361" w="314">sensor de ultrasonidos
+
+- añadir extensión "Sonar"
+- en la tarjeta de ampliación cambiar la posición de los "jumpers" de 3V3 a 5V
+
+conexión:
+echo P1
+trig P2</comment><block type="pxt-on-start" id="J%U4t0^t8n12_KX/?]]." x="492" y="-210"><statement name="HANDLER"><block type="basic_show_icon" id="|LNca9i/LBMk0Smixtf="><field name="i">IconNames.Happy</field><next><block type="device_pause" id="67*!J/B*6axqh:5nh-)R"><value name="pause"><shadow type="timePicker" id="C;Q6!f@-!u?nH?d}d$#Z"><field name="ms">1000</field></shadow></value><next><block type="device_clear_display" id="s(3[lq!,z,nLD4{NH-fO"></block></next></block></next></block></statement></block><block type="device_forever" id="HKS9pw-9Etk;no1hYd*[" x="0" y="0"><statement name="HANDLER"><block type="device_show_number" id="yjY}^ziN9dP+)5d/@Jb("><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="sonar_ping" id=",6Xe#2XqZub`D^Onm:Na"><field name="trig">DigitalPin.P2</field><field name="echo">DigitalPin.P1</field><field name="unit">PingUnit.Centimeters</field></block></value></block></statement></block></xml>
